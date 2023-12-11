@@ -2,7 +2,7 @@
 #include <vector>
 
 template <typename T>
-void bubbleSort(std::vector<T>& arr) {
+void Sort(std::vector<T>& arr) {
     int n = arr.size();
     for (int i = 0; i < n - 1; i++) {
         for (int j = 0; j < n - i - 1; j++) {
@@ -24,7 +24,7 @@ int main() {
         std::cout << num << " ";
     }
 
-    bubbleSort(numbers);
+   Sort(numbers);
 
     std::cout << "\nSorted vector: ";
     for (const auto& num : numbers) {
